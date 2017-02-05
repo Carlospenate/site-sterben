@@ -1,0 +1,84 @@
+
+<html>
+
+<head>
+    <title>Portafolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+   
+    <script src="js/detect_ie.js"></script>
+    <link href="css/style-w480.css" rel="stylesheet"
+          media="handheld,only screen and (max-width:480px)"/>
+    <link href="css/style-w680.css" rel="stylesheet"
+          media="only screen and (max-width:680px) and (min-width:481px)"/>
+    <link href="css/style-w1024.css" rel="stylesheet"
+          media="only screen and (max-width: 1024px) and (min-width: 681px)"/>
+    <link href="css/style.css" rel="stylesheet"
+          media="only screen and (min-width: 1025px)"/>
+</head>
+
+
+
+
+<body>
+<script type="text/javascript" >
+    $(function(){{
+        $('.photo_slide div:gt(0)').hide();
+
+        setInterval(function() {{
+            $('.photo_slide  div:first')
+                    .fadeOut(2000)
+                    .next()
+                    .fadeIn(2000)
+                    .end()
+                    .appendTo('.photo_slide');
+        }},  8000);
+    }});
+
+</script>
+
+<div class="photo_slide">
+    <div><img src="/img/01.jpg"/></div>
+    <div><img src="/img/02.jpg"/></div>
+    <div><img src="/img/03.jpg"/></div>
+    <div><img src="/img/04.jpg"/></div>
+</div>
+<div id="contact_us">
+    <form name="contact_us_form ">
+        <div class="left">
+            <input class="block_input" type="text" placeholder="Name*" required="true" name="Name"/>
+            <input class="block_input" type="text" placeholder="Email*" required="true" name="Email"/>
+            <input class="block_input" type="text" placeholder="Phone*" required="true" name="Phone"/>
+            <input class="block_input" type="text" placeholder="Location" name="Location"/>
+            <div id="event_day">
+                <span>Event Day</span>
+                <input type="text" placeholder="MM" name="Month" class="inline_input"/>
+                <input type="text" placeholder="DD" name="Day" class="inline_input"/>
+                <input type="text" placeholder="YY" name="Year" class="inline_input"/>
+            </div>
+        </div>
+        <div class="right">
+            <label for="details">Tell us a little more about you and your plans*</label>
+            <textarea placeholder="" id="details"></textarea>
+            <label>Event type</label>
+
+            <input type = "radio" name ="event_type" id = "advertising" checked = "checked" />
+            <label for = "advertising">Advertising</label>
+
+            <input type = "radio" name = "event_type" id = "expedition"/>
+            <label for = "expedition">Expedition</label>
+
+            <input type = "radio" name = "event_type" id ="wedding"/>
+            <label for = "wedding">Wedding</label>
+
+            <input type = "radio" name = "event_type" id ="underwater"/>
+            <label for = "underwater">Underwater</label>
+        </div>
+        <div>
+            <input type="submit" value="Send" disabled="disabled"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

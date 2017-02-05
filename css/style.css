@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "CL";
+    src: url(C&L.ttf) format("truetype");
+}
+
+* {
+    font-family: "CL", Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+a:visited {
+    color: rgb(160, 160, 160);
+}
+
+a:link {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+}
+
+/*******************************************/
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(160, 160, 160);
+    z-index: 1000;
+}
+
+#logo {
+    height: 120px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#options {
+    overflow: hidden;
+    width: auto;
+    height: 160px;
+}
+
+#social {
+    text-align: right;
+    width: 100%;
+    height: 140px;
+}
+
+#social span {
+    font-size: 16pt;
+}
+
+#social img {
+    height: 35px;
+    width: 35px;
+}
+
+#top_menu {
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 35px;
+}
+
+#top_menu div {
+    width:100%;
+    word-spacing: normal;
+}
+
+/*inicio del menú horizontal*/
+section{
+    width:100%;
+    min-height:30px;
+    margin:-2px auto;
+    padding:0;
+}
+
+
+ menu{
+   display:inline-block; 
+   margin:13px;
+   text-align:center;
+   padding:2px;
+   -moz-transition: all 300ms ease-in-out 0s;
+   -ms-transition: all 300ms ease-in-out 0s;
+   -o-transition: all 300ms ease-in-out 0s;
+   -webkit-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+    
+}
+
+menu a {cursor: default;}
+
+menu a img{
+    width:  20px;
+    height: 15px;
+}
+/*posiblemente lo utilice 
+#nav, #nav ul {
+   list-style: none outside none;
+   margin: 0;
+   padding: 0;
+}
+
+#nav ul.subs {
+   background-color: #FFFFFF;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+   color: #333333;
+   display: none;
+   left: 0;
+   padding: 2%;
+   position: absolute;
+   top: 54px;
+   width: 96%;
+	}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    -moz-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    -ms-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    -o-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    -webkit-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
+    white-space: normal;
+}
+
+
+#nav > li > a {
+    color: #333333;
+    display: block;
+    font-size: 10.8pt;
+    line-height: 12px;
+    padding: 0px;
+    text-transform: uppercase;
+    cursor: default;
+
+}
+
+#nav li.active > a {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+*/
+menu:hover {
+    border-bottom: 2.8px solid rgba(236, 0, 140, 0.5);
+    color: rgb(90, 90, 87);
+   
+}
+
+
+/*fin del menú horizontal*/
+/*******************************************/
+
+#main {
+    position: relative;
+    top:160px;
+    overflow: auto;
+    padding-top: 15px;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 120px;
+}
+
+#main img {
+    width: 100%;
+}
+
+.main_image img {
+    max-width: 100%;
+}
+
+#section_menu {
+    display: none;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.section_entry {
+    display: inline-block;
+    width: 22%;
+    height: auto;
+}
+
+.section_entry img {
+    height: 100%;
+    width: 100%;
+}
+
+.section_entry div {
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgba(0, 166, 81, 0.5);
+    z-index: 100;
+}
+
+#section_entry_1 {
+    margin-right: auto;
+}
+
+#section_entry_1 div{
+    background-color: rgba(0, 116, 81, 0.5);
+}
+
+#section_entry_2,#section_entry_3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section_entry_2 div{
+    background-color: rgba(255, 242, 0, 0.5);
+}
+
+#section_entry_3 div{
+    background-color: rgba(236, 0, 140, 0.5);
+}
+
+#section_entry_4 {
+    margin-left: auto;
+}
+
+#section_entry_4 div{
+    background-color: rgba(0, 174, 239, 0.5);
+}
+/*******************************************/
+
+#footer {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(160, 160, 160);
+    z-index: 1000;
+}
+
+#footer_content{
+    text-align: right;
+}
+
+input{
+    border:1px solid rgba(90, 90, 87, 0.5);
+    border-radius:0;
+}
+
+#footer button{
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgba(90, 90, 87, 0.5);
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -o-border-radius: 1px; 
+    border-radius: 1px;
+    padding: .3px .3px;
+    font-size: 13px;
+   
+}
+
+#lang {
+    text-align: right;
+}
+
+/*******************************************/
+
+#footer_content, #main_content, #header_content{
+    display: block;
+    max-width: 824px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*******************************************/
+
+.photo_grid{
+    display:table;
+}
+
+.photo_grid_row{
+    display: table-row;
+    border-spacing: 1px;
+}
+
+.photo_grid_cell{
+    display: table-cell;
+    width: 25%;
+}
+
+/*******************************************/
+
+.photo_slide{
+    display: block;
+    height: 600px;
+    position: relative;
+}
+
+.photo_slide div{
+    position: absolute;
+    top:2px;
+    left:2px;
+    right: 2px;
+    bottom: 2px;
+}
+
+/*******************************************/
+
+#contact_us form .left,
+#contact_us form .right{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.block_input {
+    display: block;
+    width: 80%;
+    margin: 4px;
+}
+
+.inline_input{
+    display: inline;
+    width: 40px;
+}
+
+#contact_us form fieldset{
+    border: 0;
+}
+
+textarea{
+    resize: none;
+    width: 90%;
+    height: 90px;
+    border:1px solid rgba(90, 90, 87, 0.5);
+    border-radius:0;
+}
